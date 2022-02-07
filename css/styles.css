@@ -52,8 +52,6 @@ li {
 }
 .hero-button :hover, :focus {
     background: #188CE8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
 .hero-button-text {
     font-weight: bold;

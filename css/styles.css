@@ -1,0 +1,67 @@
+body{
+    font-size: 14px;
+    font-family: Roboto;
+}
+.logo-blue, 
+.logo-dark {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;  
+    color: #2196F3;
+}
+.logo-dark {
+    color: #000000;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+li {
+    list-style-type: none;
+  }
+.main-nav,
+.contacts {
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+}
+.main-nav :hover, :focus,
+.contacts :hover, :focus {
+    color: #2196F3;
+}
+.hero {
+    background-color: #2F303A;
+}
+.hero-text {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.hero-button {
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.hero-button :hover, :focus {
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+.hero-button-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+}

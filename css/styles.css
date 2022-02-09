@@ -98,6 +98,9 @@ body{
     line-height: 1.17;
 }
 /* Секция Наша команда */
+.main-team{
+    background-color: #F5F4FA;
+}
 .team {
     font-weight: bold;
     font-size: 36px;

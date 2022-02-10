@@ -1,10 +1,34 @@
+:root {
+    /* Основные шрифты */
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+    /* Светлая тема текста */
+    --accent-light-txt: #FFFFFF;
+    --primary-light-txt: #2196F3;
+    
+    /* Тёмная тема текста */
+    --accent-dark-txt: #212121;
+    --primary-dark-txt: #757575;
+    --secondary-dark-txt: rgba(255, 255, 255, 0.6);
+
+    /* Светлая тема фона */
+    --light-bg: #F5F4FA;
+    --primary-ling-bg: #2196F3;
+    /* Тёмная тема фона */
+    --primary-dark-bg: #2F303A;
+
+}    
+
+
+
 /* ========ГЛАВНАЯ СТРАНИЦА======= */
 body{
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     font-style: normal;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--accent-dark-txt);
 }
 /* Шапка сайта */
 .header {
@@ -14,13 +38,13 @@ body{
 .logo-blue, 
 .logo-dark,
 .logo-wite {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--secondary-font);
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
 
-    color: #2196F3;
+    color: var(--primary-light-txt);
 }
 
 .logo-dark {
@@ -28,7 +52,7 @@ body{
 }
 .logo-wite,
 .location {
-    color: #FFFFFF;
+    color: var(--accent-light-txt);
 }
 .link {
     text-decoration: none;
@@ -47,11 +71,11 @@ body{
 .main-nav :focus,
 .contacts :hover,
 .contacts :focus {
-    color: #2196F3;
+    color: var(--primary-light-txt);
 }
 /* Секция герой */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--primary-dark-bg);
 }
 .hero-text {
     font-weight: 900;
@@ -60,10 +84,10 @@ body{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--accent-light-txt);
 }
 .hero-button {
-    background-color: #2196F3;
+    background-color: var(--primary-ling-bg);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -79,7 +103,7 @@ body{
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--accent-light-txt);
 }
 /* Секция Наши приимущества */
 .benefits-caption {
@@ -89,7 +113,7 @@ body{
 }
 .benefits-text {
     line-height: 1.71;   
-    color: #757575;
+    color: var(--primary-dark-txt);
 }
 /* Секция О нас */
 .we-do {
@@ -99,7 +123,7 @@ body{
 }
 /* Секция Наша команда */
 .main-team{
-    background-color: #F5F4FA;
+    background-color: var(---light-bg);
 }
 .team {
     font-weight: bold;
@@ -115,14 +139,19 @@ body{
 .team-position,
 .work-position {
     line-height: 1.19;
-    color: #757575;
+    color: var(--primary-dark-txt);
 }
 /* Подвал сайта */
 .footer {
-    background-color: #2F303A;
+    background-color: var(--primary-dark-bg);
 }
 .footer-contacts {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--secondary-dark-txt);
+}
+
+.footer-adress :focus,
+.footer-adress :hover {
+    color: rgba(33, 150, 243, 1)
 }
 
 /* ===========ПОРТФОЛИО========== */
@@ -130,13 +159,17 @@ body{
 .filters-list-btn {
     font-weight: 500;
     line-height: 1.73;
-    border-radius: 4px;  
-    background: #F5F4FA;
+    border-radius: 4px; 
+    cursor: pointer; 
+    background-color: var(---light-bg);
+    
+    
 }
 .filters-list-btn :hover,
 .filters-list-btn :focus {
-    color: #FFFFFF;
+    color: var(--accent-light-txt);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
-    background-color: #2196F3;
+    cursor: pointer; 
+    background-color: var(--primary-ling-bg);
 }

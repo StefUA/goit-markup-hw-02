@@ -74,7 +74,7 @@ body{
     color: var(--primary-light-txt);
 }
 /* Секция герой */
-.hero {
+.main-hero {
     background-color: var(--primary-dark-bg);
 }
 .hero-text {

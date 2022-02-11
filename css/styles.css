@@ -14,7 +14,7 @@
 
     /* Светлая тема фона */
     --light-bg: #F5F4FA;
-    --primary-ling-bg: #2196F3;
+    --primary-light-bg: #2196F3;
     /* Тёмная тема фона */
     --primary-dark-bg: #2F303A;
 
@@ -50,8 +50,7 @@ body{
 .logo-dark {
     color: #000000;
 }
-.logo-wite,
-.location {
+.logo-wite {
     color: var(--accent-light-txt);
 }
 .link {
@@ -67,10 +66,15 @@ body{
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
+.contacts {
+    color: var(--primary-dark-txt);
+}
 .main-nav :hover, 
 .main-nav :focus,
+.main-nav :active,
 .contacts :hover,
-.contacts :focus {
+.contacts :focus,
+.curent {
     color: var(--primary-light-txt);
 }
 /* Секция герой */
@@ -87,7 +91,7 @@ body{
     color: var(--accent-light-txt);
 }
 .hero-button {
-    background-color: var(--primary-ling-bg);
+    background-color: var(--primary-light-bg);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -107,6 +111,7 @@ body{
 }
 /* Секция Наши приимущества */
 .benefits-caption {
+    font-size: 14px;
     font-weight: bold;
     line-height: 1.14;
     text-transform: uppercase;
@@ -123,7 +128,7 @@ body{
 }
 /* Секция Наша команда */
 .main-team{
-    background-color: var(---light-bg);
+    background-color: var(--light-bg);
 }
 .team {
     font-weight: bold;
@@ -144,14 +149,21 @@ body{
 /* Подвал сайта */
 .footer {
     background-color: var(--primary-dark-bg);
+
 }
 .footer-contacts {
     color: var(--secondary-dark-txt);
+    font-style: normal;
 }
 
 .footer-adress :focus,
 .footer-adress :hover {
-    color: rgba(33, 150, 243, 1)
+    color: rgba(33, 150, 243, 1);
+    font-style: normal;
+}
+.location {
+    color: var(--accent-light-txt);
+    font-style: normal;
 }
 
 /* ===========ПОРТФОЛИО========== */
@@ -161,15 +173,15 @@ body{
     line-height: 1.73;
     border-radius: 4px; 
     cursor: pointer; 
-    background-color: var(---light-bg);
-    
-    
+    background-color: var(--light-bg);
 }
-.filters-list-btn :hover,
-.filters-list-btn :focus {
+
+.filters-item-btn :hover,
+.filters-item-btn :focus,
+.filters-item-btn :active {
     color: var(--accent-light-txt);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     cursor: pointer; 
-    background-color: var(--primary-ling-bg);
+    background-color: var(--primary-light-bg);
 }
